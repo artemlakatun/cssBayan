@@ -1,0 +1,77 @@
+.container {
+    max-width: 800px;
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+}
+.myBayan {
+    max-width: 600px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.name {
+
+}
+
+/* ячейки */
+
+.labelMem {
+    cursor: pointer;
+}
+
+.inputMem {
+    appearance: none;
+    position: absolute;
+}
+
+.memOneHead {
+    cursor: pointer;
+    border-top: 1px solid gray;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: center;
+    color: blue;
+}
+
+.memOne {
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s ease-in;
+    height: 0;
+}
+
+.memOneHead:hover {
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+.memOneHead:hover + .memOne {
+    opacity: 1;
+    transition: all 1s ease-in;
+    height: 350px;
+}
+
+.labelMem input:checked ~ .memOne {
+    opacity: 1;
+    transition: all 1s ease-in;
+    height: 400px;
+}
+
+.mem {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+
+}
+
+.center {
+    text-align: center;
+}
